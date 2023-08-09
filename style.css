@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+    box-sizing: border-box;
+    color: white;
+    cursor: default;
+}
+*::selection {
+    background-color: #fff;
+    color: #439197;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #757D96;
+}
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+/* #background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -9;
+} */
+
+/* THIS IS THE CSS OF NAVBAR */
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 100px;
+    z-index: 99;
+
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:hover {
+    color: #5EABA8;
+    cursor: pointer;
+}
+
+#nav img {
+    height: 75px;
+    border-radius: 100px;
+}
+
+#nav h4 {
+    font-weight: 500;
+}
+
+
+
+
+
+/* THIS IS THE CSS OF DIV PAGE 1 */
+
+#page1 {
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 30;
+    background-image: linear-gradient(to right top, #60ADA9,#B8C863);
+    border-bottom: 1px solid white;
+}
+
+#page1-left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 80px;
+    padding-right: 0;
+
+}
+#page1-left h1{
+    font-size: 50px;
+    font-weight: 850;
+}
+#page1-left h2{
+    font-size: 30px;
+}
+
+#page1-right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#page1-right img {
+
+    height: 600px;
+    width: 600px;
+    filter: drop-shadow(0px 0px 10px black);
+
+}
+
+#abs8 {
+    position: absolute;
+    z-index: -2;
+    /* top: -100px; */
+    bottom: 0px;
+    width: 100%;
+    height: 200vh;
+
+
+}
+
+/* THIS IS THE CSS OF PAGE 2 */
+
+#page2 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 29;
+    background-image: linear-gradient(to right, #C55E8A,#415D8E);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+
+}
+#abs1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    z-index: 2;
+    /* top: 50%; */
+    bottom: 60%;
+    left: -10%;
+}
+#abs1 img{
+    width: 400px;
+    height: 400px;
+}
+#abs2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    z-index: -1;
+    /* top: 50%; */
+    top: 60%;
+    right: -10%;
+    
+}
+#abs2 img{
+    width: 400px;
+    height: 400px;
+}
+
+#page2-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#page2-left h2{
+    font-size: 45px;
+    font-weight: 800;
+}
+#page2-left p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#page2-right{
+    width: 50%;
+    height: 90%;
+    padding: 100px;
+    padding-left: 200px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;    
+}
+.icons2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+
+}
+.icons2 h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.icons2 img:hover {
+    filter: invert(0.8);
+    cursor: pointer;
+}
+
+.icons2 img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+/* THIS IS THE CSS OF PAGE 3 */
+
+
+
+/* #page3 {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #C55E8A,#415D8E);
+    border-bottom: 1px solid white;
+    z-index: 28;
+    
+} */
+#page3 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 28;
+    background-image: linear-gradient(to right, #C55E8A,#415D8E);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+
+}
+#abs6{
+    position: absolute;
+    z-index: -1;
+}
+#page3-left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#page3-left h2{
+    font-size: 45px;
+    font-weight: 800;
+}
+#page3-right p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#page3-right{
+    width: 50%;
+    height: 90%;
+    /* padding: 100px; */
+    padding-left: 200px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid white;    
+}
+
+
+
+
+
+
+
+/* THIS IS THE CSS OF PAGE 4 */
+
+#page4 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 28;
+    background-image: linear-gradient(to right, #C55E8A,#415D8E);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+
+}
+#page4-left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#page4-left h2{
+    font-size: 45px;
+    font-weight: 800;
+}
+#page4-right p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#page4-right{
+    width: 50%;
+    height: 90%;
+    /* padding: 100px; */
+    padding-left: 200px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid white;    
+}
+
+/* THIS IS THE CSS OF PAGE 5 */
+
+#page5 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 28;
+    background-image: linear-gradient(to right, #C55E8A,#415D8E);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+
+}
+#page5-left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 100px;
+}
+#abs4{
+    transform: rotate(90deg);
+    z-index: -1;
+    left: 200px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5-left h2{
+    font-size: 45px;
+    font-weight: 800;
+}
+#page5-right p{
+    font-size: 20px;
+    font-weight: 400;
+}
+#page5-right{
+    width: 50%;
+    height: 90%;
+    /* padding: 100px; */
+    padding-left: 200px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid white;    
+}
+#page5-right img{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE CSS OF THE DIV FOOTER */
+#footer {
+    background-image: url('abs2.png');
+   background-position: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:  50px 100px;
+
+
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+
+}
+
+#icons {
+    display: flex;
+    gap: 25px;
+}
+
+#icons img:hover {
+    filter: invert(0.8);
+    cursor: pointer;
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+#footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    border-left: 1px solid white;
+}
+
+#footer-middle a {
+    text-decoration: none;
+
+}
+
+#footer-middle a:hover {
+    color: #5EABA8;
+    cursor: pointer;
+}
+
+#footer-right {
+    width: 30%;
+    height: 100%;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-left: 1px solid white;
+}
+
+#footer-right a {
+    text-decoration: none;
+
+}
+
+#footer-right a:hover {
+    color: #5EABA8;
+    cursor: pointer;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 15px;
+
+
+}
+
+#copyright p {
+    font-weight: 300;
+    font-size: 16px;
+}
